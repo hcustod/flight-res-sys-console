@@ -1,0 +1,2 @@
+/Users/hcustodio/Projects/Portfolio/HostedProjects/GBC-FlightReservationSystem-main/FlightReservationSystemProject/bin/Release/net8.0/osx-x64/publish/FlightReservationSystemProject.pdb
+/Users/hcustodio/Projects/Portfolio/HostedProjects/GBC-FlightReservationSystem-main/FlightReservationSystemProject/bin/Release/net8.0/osx-x64/publish/FlightReservationSystemProject
