@@ -1,0 +1,25 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/modules.xml
+.idea/
+.vs/
+.DS_store
+*.user
+*/suo
+*/bin/
+*/obj/
+.vscode/
+/.idea.FlightReservationSystem.iml
+/projectSettingsUpdater.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+**/customers.txt
+**/flights.txt
+**/bookings.txt
+

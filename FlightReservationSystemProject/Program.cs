@@ -1,12 +1,4 @@
-﻿/*
- *  Group Members:
- *  Henrique Custodio (101497015)
- *  Fitsum Asgedom (101510623)
- *  Jinah Ahn (100902591) 
- *
- */
-
-using System;
+﻿using System;
 using System.IO;
 using System.Collections.Generic;
 using FlightReservationSystemProject;
@@ -35,11 +27,12 @@ class Program
             Console.WriteLine("  ║              Welcome to Extreme Flight Reservation System!              ║");
             Console.WriteLine("  ╚═════════════════════════════════════════════════════════════════════════╝" + RESET);
            
-            Console.WriteLine(CYAN+"\nPlease select a choice from the options below (Enter 1-4):"+RESET);
+            Console.WriteLine(CYAN+"\nPlease select a choice from the options below (Enter 1-5):"+RESET);
             Console.WriteLine(GREEN+"\n 1. Customers.");
             Console.WriteLine("\n 2. Flights.");
-            Console.WriteLine("\n 3. Bookings. "+RESET);
-            Console.WriteLine(RED+"\n 4. Exit."+RESET);
+            Console.WriteLine("\n 3. Bookings.");
+            Console.WriteLine("\n 4. Tutorial." + RESET);
+            Console.WriteLine(RED + "\n 5. Exit." + RESET);
             Console.Write(CYAN+"\nSelect an Option: "+RESET);
             
             // ? is for the conversion of null literal and/or value into non-nullable type...
@@ -60,14 +53,18 @@ class Program
                     bookingMenu.ShowMenu();
                     break;
                 case "4":
+                    TutorialMenu tutorialMenu = new TutorialMenu();
+                    tutorialMenu.Show();
+                    break;
+                case "5":
                     if (ConfirmExit())
                     {
                         RUNNING = false;
+                        Console.WriteLine(RED + "Exiting the Program, Thanks for Visiting... " + RESET);
                     }
-                    Console.WriteLine(RED+"Exiting the Program, Thanks for Visting... "+RESET);
                     break;
                 default:
-                    Console.WriteLine(RED+"Invalid option please select an option by inputting a number between 1-4."+RESET);
+                    Console.WriteLine(RED + "Invalid option. Please select a number between 1 and 5." + RESET);
                     break;
             }
             
